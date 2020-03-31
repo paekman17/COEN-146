@@ -1,0 +1,8 @@
+# Name: Ethan Paek
+# Date: 3/31/2020
+# Title: Lab 1 - Questions
+# Description: This .txt file answers all of the questions asked for Lab 1
+
+Step 3: When I run my program by typing "./Lab1exec", I get a segmentation fault since I do not include the required parameter when I execute my code.
+
+Step 4: Entering a Delay of 500 makes the process go much faster than a delay of 5000. The higher the number = the longer the delay in between the processing.
