@@ -28,11 +28,11 @@ int main(){
 	// part c
 	int n = 5; // parallel connections
 	// non-persistent case:
-	int non_pers = client_receive + (ceil(objects/n) * RTTHTTP);
+	int non_pers = client_receive + (2 * ceil(objects/n) * RTTHTTP);
 	printf("Time elapsed for parallel TCP connections and non-persistent case: %d msecs\n", non_pers);
 
 	// persistent case:
-	int pers = client_receive - RTTHTTP + (ceil(objects/n) * RTTHTTP);
+	int pers = client_receive + (ceil(objects/n) * RTTHTTP);
 	printf("Time elapsed for parallel TCP connections and persistent case: %d msecs\n", pers);
 
 	return 0;
