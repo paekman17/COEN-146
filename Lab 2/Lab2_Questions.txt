@@ -1,0 +1,77 @@
+# Name: Ethan Paek
+# Date: 4/7/20
+# Title: Lab #2 - Questions
+# Description: This .txt file answers all of the questions asked for Lab 2
+
+Step 1:
+	See Lab2.c
+
+Step 2:
+	a. netstat - Returned all active internet connections in addition to the TCP and UDP ports on which the computer is listening. This command also provided all of the active UNIX domain sockets.
+
+	b. ifconfig - Displays the configuration of all active interfaces. From this you could enable and disable an interface and easily troubleshoot your configurations.
+
+	c. hostname - Simply returns the hostname of my computer. We could also change the hostname by using this command as well.
+
+	d. ping - This command can be used to ping in combination with a destination (e.g. a website) to send an ICMP ECHO_REQUEST and get an ECHO_RESPONSE from the host of gateway. Ping essentially calculates the time it takes to send a call and receive a response. This is great for getting an understanding of the repsonse time between servers and computers to see how fast (or slow) a connection is.
+
+	e. traceroute - Shows that path that a packet takes when sending info to a destination (e.g. traceroute www.google.com). Furthermore, it tells us how much time has elapsed to send this information. It's a great way to get an understanding of the where the packet may be taking the most amount of time. 
+
+	f. telnet - Allows us to give a specific IP address and port to test whether if it's open or not to run programs remotely and conduct administration.
+
+	g. host/dig - Lets us query information about various DNS records, including host addresses, mail exchanges, and name servers. It's mainly used for verifying and troubleshooting DNS problems as well as displaying answers (system name) from requested server.
+
+	h. route - Displays and allows us to manipulate the IP routing table. Command is used for setting up static routes to specific host or networks via an interface.
+
+	i. arp - Manipulates or displays the kernal's IPv4 network neighbour cache. Can add, delete, or display the current content. 
+
+Step 3:
+	Using:
+	Belgium - visiteurope.com = 104.155.2.95
+	China - baidu.com = 39.156.69.79
+	USA - google.com = 172.217.14.238
+
+	a.
+	Belgium - 20 packets transmitted, 20 packets received, 0.0% packet loss
+	China - 20 packets transmitted, 20 packets received, 0.0% packet loss
+	USA - 20 packets transmitted, 20 packets received, 0.0% packet loss
+
+	b.
+	Belgium - round-trip min/avg/max/stddev = 154.641/156.738/160.547/1.858 ms
+	China - round-trip min/avg/max/stddev = 207.479/243.564/313.141/35.689 ms
+	USA - round-trip min/avg/max/stddev = 12.223/13.928/17.681/1.485 ms
+
+	c. Clearly, USA is the fastest since that is where we are located. Belgium is the second fastest after the Atlantic undersea cable. Third is China since it has to go all the way through the east coast, then Europe, then finally to China.
+
+Step 4:
+	
+Step 5:
+	a. Terminal output:
+	Trying 128.119.245.12...
+	Connected to gaia.cs.umass.edu.
+	Escape character is '^]'.
+
+	b. Returned is an index page with a bunch of information on it. 
+
+	c. 
+	- We are getting the index file through the path "/kurose_ross/interactive/index.php"
+	- The client is running HTTP with version 1.1 (HTTP/1.1)
+	- Formats of text and images: tables, <p>, lists, links, and images (.jpg)
+
+Step 6:
+	Although this is only for USA (google.com), all 3 countries that were tested had extremely similar results.
+
+	google.com 80:
+		HTTP/1.1 301 Moved Permanently
+		Location: http://www.google.com/
+		Content-Type: text/html; charset=UTF-8
+		Date: Tue, 07 Apr 2020 23:10:41 GMT
+		Expires: Thu, 07 May 2020 23:10:41 GMT
+		Cache-Control: public, max-age=2592000
+		Server: gws
+		Content-Length: 219
+		X-XSS-Protection: 0
+		X-Frame-Options: SAMEORIGIN
+	google.com 3389:
+		Trying 216.58.193.78...
+		(no response)
